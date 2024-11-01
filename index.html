@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santo's Auto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <img src="img/Logo.png" alt="Logo" class="logo">
+    </header>
+    
+    <div class="title">
+        <h1>Santo's Auto</h1>
+        <button id="login_btn" class="login-btn">Login</button>
+        <h2>Le nostre auto</h2>
+
+        <!-- Slider di immagini con frecce -->
+        <div class="sliderContainer">
+            <div class="slider" id="slider">
+                        <img src="img/BMW M3 Competition.webp" alt="BMW M3 COMPETITION" class="clickable-image" 
+                             data-description="BMW M3 Competition | Cavalli: 510 | Cilindrata: 3.0L | Anno di immatricolazione: 2021">
+                        <img src="img/Bugatti Chiron.jpg" alt="BUGATTI CHIRON" class="clickable-image" 
+                             data-description="Bugatti Chiron | Cavalli: 1500 | Cilindrata: 8.0L W16 | Anno di immatricolazione: 2016">
+                        <img src="img/Camaro ZL1.jpg" alt="CAMARO ZL1" class="clickable-image" 
+                             data-description="Camaro ZL1 | Cavalli: 650 | Cilindrata: 6.2L V8 | Anno di immatricolazione: 2017">
+                        <img src="img/Corvette ZR1.jpg" alt="CORVETTE ZR1" class="clickable-image" 
+                             data-description="Corvette ZR1 | Cavalli: 755 | Cilindrata: 6.2L V8 | Anno di immatricolazione: 2019">
+                        <img src="img/Dodge Challenger SRT.jpg" alt="DODGE CHALLENGER SRT" class="clickable-image" 
+                             data-description="Dodge Challenger SRT | Cavalli: 797 | Cilindrata: 6.2L V8 | Anno di immatricolazione: 2020">
+                        <img src="img/Ferrari 488 GTB.jpg" alt="FERRARI 488 GTB" class="clickable-image" 
+                             data-description="Ferrari 488 GTB | Cavalli: 670 | Cilindrata: 3.9L V8 | Anno di immatricolazione: 2015">
+                        <img src="img/Ford Mustang Mach1.avif" alt="MUSTANG MACH1" class="clickable-image" 
+                             data-description="Ford Mustang Mach1 | Cavalli: 480 | Cilindrata: 5.0L V8 | Anno di immatricolazione: 2021">
+                        <img src="img/Giulia Quadrifoglio.jpg" alt="GIULIA QUADRIFOGLIO" class="clickable-image" 
+                             data-description="Giulia Quadrifoglio | Cavalli: 510 | Cilindrata: 2.9L V6 | Anno di immatricolazione: 2020">
+                        <img src="img/Lamborghini Urus.jpg" alt="LAMBORGHINI URUS" class="clickable-image" 
+                             data-description="Lamborghini Urus | Cavalli: 650 | Cilindrata: 4.0L V8 | Anno di immatricolazione: 2018">
+                        <img src="img/Maserati Ghibli.jpg" alt="MASERATI GHIBLI" class="clickable-image" 
+                             data-description="Maserati Ghibli | Cavalli: 580 | Cilindrata: 3.8L V8 | Anno di immatricolazione: 2021">
+                    </div>
+                </div>
+                
+            <!-- Frecce -->
+            <div class="slider-arrow left" id="prev">&#10094;</div>
+            <div class="slider-arrow right" id="next">&#10095;</div>
+        </div>
+
+        <!-- Card con immagine ingrandita dell'auto e le caratteristiche -->
+        <div id="cardModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img id="modalImage" src="" alt="">
+                <p id="modalDescription"></p>
+            </div>
+        </div>
+
+        <!-- Form di Login -->
+        <div id="login_form">
+            <h2>Login</h2>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required> <br>
+
+            <label for="username">Nome e cognome:</label>
+            <input type="text" id="username" name="username" required> <br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button id="accesso">Accesso</button>
+            <button id="closeBtn">Chiudi</button>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>Numero di telefono: <a href="tel:  +39 123 456 789"> +39 123 456 789 </a>  |    |Email PEC: <a href="mailto:info@example.com"> info@pec.it  </a> </p>
+        </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
